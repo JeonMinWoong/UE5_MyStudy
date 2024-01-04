@@ -74,7 +74,14 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # My lgnore
+IntroProject/Binaries/*
+IntroProject/Build/*
+IntroProject/Intermediate/*
+IntroProject/DerivedDataCache/*
 IntroProject/Saved/*
+
+WarehouseWreckage/Binaries/*
+WarehouseWreckage/Build/*
+WarehouseWreckage/Intermediate/*
+WarehouseWreckage/DerivedDataCache/*
 WarehouseWreckage/Saved/*
-
-
