@@ -16,7 +16,9 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//SetActorLocation(MyVector);
+	startLocation = GetActorLocation();
+
+	UE_LOG(LogTemp, Display, TEXT("movidDistance: %f"), movedDistance);
 }
 
 // Called every frame
@@ -33,7 +35,17 @@ void AMovingPlatform::Tick(float DeltaTime)
 	SetActorLocation(currentLocation);
 	// Send Platform back if gone too far
 		// Check how far we`ve moved
+	distValue = FVector::Dist(startLocation, currentLocation);
 		// Reverse direction of motion if gone too far
+	if(distValue > movedDistance){
+		float txetValue = distValue - movedDistance;
 
+		UE_LOG(LogTemp, Display, TEXT("My Txet : %f"), txetValue);
+
+		FVector moveDirection = platformVelocity.GetSafeNormal();
+		startLocation = startLocation + moveDirection * movedDistance;
+		SetActorLocation(startLocation);
+		platformVelocity = -platformVelocity;
+	}
 }
 
