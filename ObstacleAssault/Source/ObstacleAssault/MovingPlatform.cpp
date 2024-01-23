@@ -18,7 +18,9 @@ void AMovingPlatform::BeginPlay()
 
 	startLocation = GetActorLocation();
 
-	UE_LOG(LogTemp, Display, TEXT("movidDistance: %f"), movedDistance);
+	FString name = GetName();
+
+	UE_LOG(LogTemp, Display, TEXT("BeginPlay : %s"), *name);
 }
 
 // Called every frame
@@ -26,26 +28,36 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	// Move platform forwards
-		// Get current location
-	FVector currentLocation = GetActorLocation();
-		// Add vector to that location
-	currentLocation = currentLocation + platformVelocity * DeltaTime;
-		// Set the location
-	SetActorLocation(currentLocation);
-	// Send Platform back if gone too far
-		// Check how far we`ve moved
-	distValue = FVector::Dist(startLocation, currentLocation);
-		// Reverse direction of motion if gone too far
-	if(distValue > movedDistance){
-		float txetValue = distValue - movedDistance;
+	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
+}
 
-		UE_LOG(LogTemp, Display, TEXT("My Txet : %f"), txetValue);
-
+void AMovingPlatform::MovePlatform(float deltaTime){
+	if(ShouldPlatformReturn()){
 		FVector moveDirection = platformVelocity.GetSafeNormal();
 		startLocation = startLocation + moveDirection * movedDistance;
 		SetActorLocation(startLocation);
 		platformVelocity = -platformVelocity;
 	}
+	else{
+		FVector currentLocation = GetActorLocation();
+		currentLocation = currentLocation + platformVelocity * deltaTime;
+		SetActorLocation(currentLocation);
+	}
 }
 
+void AMovingPlatform::RotatePlatform(float deltaTime){
+	FRotator currentRotation = GetActorRotation();
+	currentRotation = currentRotation + rotationVelocity * deltaTime;
+	SetActorRotation(currentRotation);
+	// 더하는 방식 
+	//AddActorLocalRotation(rotationVelocity * deltaTime);
+}
+
+bool AMovingPlatform::ShouldPlatformReturn() const {
+	return GetDistanceMoved() > movedDistance;
+}
+
+float AMovingPlatform::GetDistanceMoved() const {
+	return FVector::Dist(startLocation, GetActorLocation());
+}
