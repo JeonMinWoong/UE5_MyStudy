@@ -79,18 +79,21 @@ IntroProject/Build/*
 IntroProject/Intermediate/*
 IntroProject/DerivedDataCache/*
 IntroProject/Saved/*
-IntroProject/Binaries/*
 
 WarehouseWreckage/Binaries/*
 WarehouseWreckage/Build/*
 WarehouseWreckage/Intermediate/*
 WarehouseWreckage/DerivedDataCache/*
 WarehouseWreckage/Saved/*
-WarehouseWreckage/Binaries/*
 
 ObstacleAssault/Binaries/*
 ObstacleAssault/Build/*
 ObstacleAssault/Intermediate/*
 ObstacleAssault/DerivedDataCache/*
 ObstacleAssault/Saved/*
-ObstacleAssault/Binaries/*
+
+CryptRaider/Binaries/*
+CryptRaider/Build/*
+CryptRaider/Intermediate/*
+CryptRaider/DerivedDataCache/*
+CryptRaider/Saved/*
