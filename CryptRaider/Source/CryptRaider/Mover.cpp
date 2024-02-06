@@ -2,6 +2,8 @@
 
 
 #include "Mover.h"
+
+#include "DynamicMesh/DynamicMesh3.h"
 #include "Math/UnrealMathUtility.h"
 
 // Sets default values for this component's properties
@@ -38,4 +40,11 @@ void UMover::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponent
 		GetOwner()->SetActorLocation(newLocation);
 	}
 }
+
+void UMover::SetShouldMove(bool IsActive)
+{
+	shouldMove = IsActive;
+	UE_LOG(LogTemp, Log, TEXT("check"));
+}
+
 
