@@ -97,3 +97,9 @@ CryptRaider/Build/*
 CryptRaider/Intermediate/*
 CryptRaider/DerivedDataCache/*
 CryptRaider/Saved/*
+
+ToonTanks/Binaries/*
+ToonTanks/Build/*
+ToonTanks/Intermediate/*
+ToonTanks/DerivedDataCache/*
+ToonTanks/Saved/*
