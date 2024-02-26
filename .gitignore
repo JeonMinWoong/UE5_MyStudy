@@ -103,3 +103,9 @@ ToonTanks/Build/*
 ToonTanks/Intermediate/*
 ToonTanks/DerivedDataCache/*
 ToonTanks/Saved/*
+
+SimpleShooter/Binaries/*
+SimpleShooter/Build/*
+SimpleShooter/Intermediate/*
+SimpleShooter/DerivedDataCache/*
+SimpleShooter/Saved/*
