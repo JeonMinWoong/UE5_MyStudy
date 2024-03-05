@@ -124,7 +124,7 @@ Inflearn/HelloUnreal/Saved/*
 Inflearn/HelloUnreal/.idea/*
 Inflearn/HelloUnreal/.vs/*
 Inflearn/HelloUnreal/.vsconfig
-Inflearn/HelloUnreal/HelloUnreal
+Inflearn/HelloUnreal/.sln
 
 Inflearn/UnrealObject/Binaries/*
 Inflearn/UnrealObject/Build/*
@@ -134,7 +134,7 @@ Inflearn/UnrealObject/Saved/*
 Inflearn/UnrealObject/.idea/*
 Inflearn/UnrealObject/.vs/*
 Inflearn/UnrealObject/.vsconfig
-Inflearn/UnrealObject/UnrealObject
+Inflearn/UnrealObject/.sln
 
 Inflearn/UnrealString/Binaries/*
 Inflearn/UnrealString/Build/*
@@ -144,7 +144,7 @@ Inflearn/UnrealString/Saved/*
 Inflearn/UnrealString/.idea/*
 Inflearn/UnrealString/.vs/*
 Inflearn/UnrealString/.vsconfig
-Inflearn/UnrealString/UnrealString
+Inflearn/UnrealString/.sln
 
 Inflearn/ObjectReflection/Binaries/*
 Inflearn/ObjectReflection/Build/*
@@ -154,4 +154,34 @@ Inflearn/ObjectReflection/Saved/*
 Inflearn/ObjectReflection/.idea/*
 Inflearn/ObjectReflection/.vs/*
 Inflearn/ObjectReflection/.vsconfig
-Inflearn/ObjectReflection/UnrealString
+Inflearn/ObjectReflection/.sln
+
+Inflearn/UnrealComposition/Binaries/*
+Inflearn/UnrealComposition/Build/*
+Inflearn/UnrealComposition/Intermediate/*
+Inflearn/UnrealComposition/DerivedDataCache/*
+Inflearn/UnrealComposition/Saved/*
+Inflearn/UnrealComposition/.idea/*
+Inflearn/UnrealComposition/.vs/*
+Inflearn/UnrealComposition/.vsconfig
+Inflearn/UnrealComposition/.sln
+
+Inflearn/UnrealInterface/Binaries/*
+Inflearn/UnrealInterface/Build/*
+Inflearn/UnrealInterface/Intermediate/*
+Inflearn/UnrealInterface/DerivedDataCache/*
+Inflearn/UnrealInterface/Saved/*
+Inflearn/UnrealInterface/.idea/*
+Inflearn/UnrealInterface/.vs/*
+Inflearn/UnrealInterface/.vsconfig
+Inflearn/UnrealInterface/.sln
+
+Inflearn/UnrealDelegate/Binaries/*
+Inflearn/UnrealDelegate/Build/*
+Inflearn/UnrealDelegate/Intermediate/*
+Inflearn/UnrealDelegate/DerivedDataCache/*
+Inflearn/UnrealDelegate/Saved/*
+Inflearn/UnrealDelegate/.idea/*
+Inflearn/UnrealDelegate/.vs/*
+Inflearn/UnrealDelegate/.vsconfig
+Inflearn/UnrealDelegate/.sln
